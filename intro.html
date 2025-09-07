@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Introduction - My Cool JS App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top bar -->
+    <header>
+      <h1>Introduction to HTML, CSS, and JS</h1>
+    </header>
+
+    <div class="container">
+      <!-- Left menu -->
+      <nav id="sideMenu">
+        <button id="toggleMenuBtn">☰</button>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="intro.html">Introduction</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main content -->
+      <main id="mainContent">
+        <h2>HTML Basics</h2>
+        <p>This is a paragraph. Below is a list:</p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+        <p>And here’s a table:</p>
+        <table border="1" cellpadding="5">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Alice</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>30</td>
+          </tr>
+        </table>
+        <p>And an image:</p>
+        <img src="https://via.placeholder.com/150" alt="Example" />
+
+        <h2>CSS Basics</h2>
+        <p class="highlight">
+          This text is styled with a CSS class (highlight).
+        </p>
+
+        <h2>JavaScript Basics</h2>
+        <p id="jsDemo">Click the button to change my text.</p>
+        <button id="jsButton">Change Text</button>
+      </main>
+
+      <!-- Right panel -->
+      <aside id="rightPanel">
+        <button id="toggleRightBtn">⇄</button>
+        <div id="widgets"></div>
+      </aside>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+      // Small JS demo for this page
+      document.getElementById("jsButton").addEventListener("click", () => {
+        document.getElementById("jsDemo").textContent =
+          "The text has changed with JavaScript!";
+      });
+    </script>
+  </body>
+</html>
