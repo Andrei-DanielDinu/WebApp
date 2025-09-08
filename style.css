@@ -66,3 +66,82 @@ aside#rightPanel.collapsed {
 aside#rightPanel button {
   margin-bottom: 1rem;
 }
+
+/* Auth container */
+.auth-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs */
+.auth-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.auth-tabs button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-size: 16px;
+}
+.auth-tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+/* Forms */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+.auth-form label {
+  margin-top: 10px;
+}
+.auth-form input {
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.auth-form button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.auth-form button:hover {
+  background: #0056b3;
+}
+
+/* Hidden utility */
+.hidden {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+#logoutBtn {
+  margin: 10px 0;
+  padding: 8px 15px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background: #a71d2a;
+}
